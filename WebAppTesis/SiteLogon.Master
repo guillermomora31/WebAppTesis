@@ -1,0 +1,60 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeFile="SiteLogon.master.vb" Inherits="SiteLogon" %>
+<%@ Register assembly="DevExpress.Web.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web" tagprefix="dx" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            border-width: 0;
+        }
+        .dxeBase
+        {
+	        font: 12px Tahoma, Geneva, sans-serif;
+        }
+        footer {
+              text-align: center;
+              padding: 3px;
+              background-color: #993333;
+              color: white;
+            }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table border="0" style="width:100%;">
+                    <tr>
+                        <td align="center">
+                            <dx:ASPxImage ID="ASPxImage1" runat="server" ImageUrl="~/imagenes/logo.jpg" ShowLoadingImage="true" style="text-align: center">
+                            </dx:ASPxImage>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <dx:ASPxLabel runat="server" Text="SISTEMA TUTOR INTELIGENTE" Width="100%" BackColor="#993333" Font-Bold="True" ForeColor="White" ID="ASPxLabel1" Font-Size="X-Large">
+                            </dx:ASPxLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height:300px;align-content:unset" >
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1"  runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                </table>
+            
+        </div>
+        <footer>
+            <p>Sistema Tutor Inteligente<br>
+               Derechos reservados <br>
+                Contacto:admin@hotmail.com <br>
+            </p>
+         </footer>
+    </form>
+
+</body>
+</html>

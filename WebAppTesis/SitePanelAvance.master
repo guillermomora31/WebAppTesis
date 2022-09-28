@@ -1,0 +1,95 @@
+﻿<%@ Master Language="VB" CodeFile="SitePanelAvance.master.vb" Inherits="SitePanelAvance" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+        <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            font-size: large;
+            font-weight: bold;
+            color: white;
+            background-color:#993300;
+            text-align: center;
+        }
+        .auto-style6 {
+            width: 541px;
+            text-align: center;
+        }
+        .auto-style10 {
+            font-size: large;
+            font-weight: bold;
+            color: white;
+            background-color: #993300;
+            text-align: center;
+            width: 798px;
+        }
+        .auto-style11 {
+            width: 798px;
+            text-align: left;
+        }
+        .auto-style15 {
+            font-weight: bold;
+            font-size: medium;
+        }
+        .auto-style18 {
+            width: 429px;
+            text-align: center;
+        }
+        .auto-style19 {
+            width: 429px;
+            text-align: left;
+        }
+        .auto-style20 {
+            text-align: right;
+        }
+        .auto-style21 {
+            margin-left: 0px;
+        }
+        .auto-style22 {
+            text-align: left;
+        }
+        footer {
+              text-align: center;
+              padding: 3px;
+              background-color: #993333;
+              color: white;
+            }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table style="width:100%;">
+                <tr>
+                    <td align="center">
+                        <dx:ASPxLabel runat="server" Text="PANEL PRINCIPAL ESTUDIANTE" Width="100%" BackColor="#993333" Font-Bold="True" ForeColor="White" ID="ASPxLabel1" Font-Size="X-Large">
+                        </dx:ASPxLabel>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1"  runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+            </table>
+        
+        </div>
+        <footer>
+            <p>Sistema Tutor Inteligente<br>
+               Derechos reservados <br>
+                Contacto:admin@hotmail.com <br>
+            </p>
+         </footer>
+    </form>
+</body>
+</html>
